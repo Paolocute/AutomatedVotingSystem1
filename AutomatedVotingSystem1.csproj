@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25315027-A371-4165-816F-6736267171D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AutomatedVotingSystem1</RootNamespace>
+    <AssemblyName>AutomatedVotingSystem1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutomatedVotingSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AutomatedVotingSystemDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutomatedVotingSystemDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Admin\Candidates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\Admin\Candidates.Designer.cs">
+      <DependentUpon>Candidates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Admin\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\Admin\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Admin\Election.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\Admin\Election.Designer.cs">
+      <DependentUpon>Election.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Admin\ElectionResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\Admin\ElectionResult.Designer.cs">
+      <DependentUpon>ElectionResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Admin\MainDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Admin\MainDashboard.Designer.cs">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Admin\Voters.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\Admin\Voters.Designer.cs">
+      <DependentUpon>Voters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Voters\Vote.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\Voters\Vote.Designer.cs">
+      <DependentUpon>Vote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Voters\VoterDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\Voters\VoterDashboard.Designer.cs">
+      <DependentUpon>VoterDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Voters\VoterMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Voters\VoterMain.Designer.cs">
+      <DependentUpon>VoterMain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\Admin\Candidates.resx">
+      <DependentUpon>Candidates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Admin\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Admin\Election.resx">
+      <DependentUpon>Election.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Admin\ElectionResult.resx">
+      <DependentUpon>ElectionResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Admin\MainDashboard.resx">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Admin\Voters.resx">
+      <DependentUpon>Voters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Voters\Vote.resx">
+      <DependentUpon>Vote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Voters\VoterDashboard.resx">
+      <DependentUpon>VoterDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Voters\VoterMain.resx">
+      <DependentUpon>VoterMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AutomatedVotingSystemDataSet.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet1.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet1.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet10.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet10.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet11.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet11.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet2.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet2.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet3.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet3.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet4.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet4.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet5.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet5.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet6.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet6.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet7.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet7.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet8.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet8.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet9.xsc">
+      <DependentUpon>AutomatedVotingSystemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutomatedVotingSystemDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutomatedVotingSystemDataSet9.xss">
+      <DependentUpon>AutomatedVotingSystemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\462546467_1105490384615051_6724018256228744766_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-manager-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-manager-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-elections-60 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hire-me-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voters-60 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Malukupal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profile-picture-30.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
